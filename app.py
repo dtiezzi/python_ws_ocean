@@ -3,7 +3,7 @@ from flask import Flask, g
 import sqlite3
 
 DATABASE = 'blog.db'
-SECRETKEY = 'y@vasurA'
+SECRETKEY = 'pudim'
 
 
 app = Flask(__name__)
