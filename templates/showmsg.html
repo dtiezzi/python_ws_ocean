@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="msg_form">
+    <form action="/insert" method="POST" id="form_msg">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" size="30">
+        <label for="text">Text</label>
+        <textarea rows="5" cols="40" name="text" id="text" size=""></textarea>
+        <button type="submit">Publish</button>
+    </form>
+</div>
+<div class="list">
+<ul>
+{% for result in msg %}
+<li>
+    <h3>Title: {{ result['title'] }}</h3>
+    Date: {{result['date']}} - Text: {{ result['text'] }}
+</li>
+{% endfor %}
+</ul>
+</div>
+{% endblock %}

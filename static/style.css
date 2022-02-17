@@ -1,0 +1,14 @@
+.msg_form {border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;}
+
+.list {border: 2px solid black;
+        border-radius: 10px;}
+
+
+#form_msg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
